@@ -1,0 +1,19 @@
+/* Css Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Fonts */
+@font-face{
+    font-family: 'IRANYekan';
+    src:  url('../assets/fonts/IRANYekanX-Regular.woff') format('woff');
+}
+/* Body Styles */
+body{
+    font-family: 'IRANYekan';
+}

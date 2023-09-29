@@ -15,6 +15,7 @@
 
 
 /* Body Styles */
-body{
+body,
+button{
     font-family: 'IRANYekan';
 }

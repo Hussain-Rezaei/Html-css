@@ -5,10 +5,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
 }
 
-/* root variable */
+/* root variables */
 :root {
     --color-primaray: #ff5722;
     --color-secondary-light: #fff6f2;
@@ -17,7 +17,7 @@
     --color-heading: #000;
     --color-body: #333333;
     --color-white: #fff;
-}
+} 
 
 html{
     font-size: 62.5%;
@@ -122,4 +122,38 @@ h2{
     .badge{
         font-size: 1.6rem;
     }
+}
+
+.list {
+    /* list-style: none; */
+    font-size: 1.6rem;
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.list--tick .list__item {
+    background: url(/assets/images/tick\ icon.svg) center right no-repeat;
+    padding-right: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* second solution */
+/* .list--tick .list__item::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(/assets/images/tick\ icon.svg) no-repeat;
+    padding-right: 2rem;
+    margin-left: .5rem;
+} */
+
+@media screen and (min-width:1024px) {
+    .list--tick .list__item{
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
 }

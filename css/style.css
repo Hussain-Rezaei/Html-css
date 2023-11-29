@@ -1,4 +1,5 @@
-/* Css Reset */
+/*** Css Reset ***/
+/* ************* */
 *,
 *::before,
 *::after {
@@ -8,7 +9,8 @@
     /* list-style: none; */
 }
 
-/* root variables */
+/*** Root Variables ***/
+/* ****************** */
 :root {
     --color-primaray: #ff5722;
     --color-secondary-light: #fff6f2;
@@ -23,12 +25,10 @@ html{
     font-size: 62.5%;
 }
 
-
 body {
     color: var(--color-body);
     font-size: 1.4rem;
 }
-
 
 h1,h2,h3 {
     color: var(--color-heading);
@@ -56,7 +56,8 @@ h2{
 }
 
 
-/* Buttons */
+/*** Buttons ***/
+/* *********** */
 .btn {
     cursor: pointer;
     outline: 0;
@@ -67,11 +68,7 @@ h2{
     text-align: center;
     white-space: nowrap;
     font-size: 1.4rem;
-    
-
-
 }
-
 
 .btn--primary {
     background-color: var(--color-primaray);
@@ -124,6 +121,9 @@ h2{
     }
 }
 
+
+/*** list ***/
+/* ******** */
 .list {
     /* list-style: none; */
     font-size: 1.6rem;
@@ -154,6 +154,44 @@ h2{
     .list--tick .list__item{
         font-size: 1.8rem;
         margin-bottom: 2rem;
-    }
+    }   
+}
+
+
+/*** Plan ***/
+/* ******** */
+
+.block-plan{
+    display: grid;
+    gap: 2rem 3rem;
+    margin: 2rem;
     
+}
+
+.plan{
+    /* background-color:#ccc; */
+    mix-width: 500px;
+}
+
+.card{
+    background-color: #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px #efefef;
+    overflow: hidden;
+
+}
+
+.card__header,
+.card__body {
+    padding: 3rem 2.5rem;
+}
+
+.card__header{
+    background-color: var(--color-secondary-dark);
+}
+
+@media screen and (min-width:1024px){
+    .block-plan{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

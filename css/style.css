@@ -102,7 +102,8 @@ h2{
 
 .badge {
     display: inline-block ;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem 0.5rem 1rem;
+    text-align: center;
     background-color: var(--color-white);
     border-radius: 32px;
     color: var(--color-primary);
@@ -126,7 +127,7 @@ h2{
 /*** list ***/
 /* ******** */
 .list {
-    /* list-style: none; */
+    list-style: none;
     font-size: 1.6rem;
 }
 
@@ -165,19 +166,22 @@ h2{
 .block-plan{
     display: grid;
     gap: 2rem 3rem;
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
+    margin-top: 4rem;
     
 }
 
 .plan{
     /* background-color:#ccc; */
-    mix-width: 500px;
+    max-width: 450px;
+    margin: 1rem;
+    transition: all 0.2s ease-out;
 }
 
 .card{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     border-radius: 20px;
-    box-shadow: 0 0 20px 10px #efefef;
+    box-shadow: 0 0 20px 10px #cfcccc;
     overflow: hidden;
 }
 
@@ -219,8 +223,29 @@ h2{
     display: block;
 }
 
+.plan .btn--block{
+    margin-top: 10rem;
+    font-size: 1.6rem;
+}
+
+.plan--popular{
+    transform: scale(1.1);
+}
+
+.plan--popular:hover{
+    transform: scale(2);
+}
+
+.plan:hover{
+    transform: scale(1.05);
+}
+
 @media screen and (min-width:1024px){
     .block-plan{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .plan .btn--block{
+        font-size: 1.8rem;
     }
 }

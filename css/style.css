@@ -29,6 +29,7 @@ html{
 body {
     color: var(--color-body);
     font-size: 1.4rem;
+    line-height: 2.8rem;
 }
 
 h1,h2,h3 {
@@ -267,22 +268,38 @@ h2{
 
 .feature{
     display: grid;
+    margin-top: 1rem;
 }
 
 .feature__text{
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 .feature .btn{
     padding: 1.2rem 3rem;
 }
 
-.feature__image{
+/* .feature__image > img{
     width: 100%; 
     height: auto;
-}
+} */
 
+.feature__image{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+ 
 @media screen and (min-width:1024px) {
     .feature{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature__image{
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    .feature__text{
+        order: 1;
     }
 }
